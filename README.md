@@ -1,24 +1,25 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Download the repository and once it's done navigate into the folder and execute
+`bundle install`
+ and then
+ 
+ `rails s`
+ 
+ You can use the api like this:
+ 
+ `localhost:3000/get_location/?query=casa%20mate`
+ 
+BEFORE to start to use the api, you need to set-up your environment variable with the GOOGLE API KEY to use the third-part API
+ [https://developers.google.com/maps/documentation/geocoding/intro]
 
-Things you may want to cover:
+You can do it running this command:
 
-* Ruby version
+`export API_KEY=Y0ur4P1K3yFr0mGo0gle`
 
-* System dependencies
+You have a query parameter which should be the string that you are looking for.
+The result should look like this:
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+`{"lat": 33.927172,
+  "lng": -84.3487}
+`
